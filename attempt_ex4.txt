@@ -1,0 +1,30 @@
+; Storing sprite adress
+A2 12
+
+; default 1 and X and Y coordinates
+61 01
+62 00
+63 00
+
+; drawing
+D2 31
+
+; Waiting for right key
+F9 0A
+; Skipping if the key is not the one we want
+E9 A1
+; Go right
+82 14
+
+; Waiting for left key
+F7 0A
+; Skipping if the key is not the one we want
+E7 A1
+; Go left
+82 15
+
+; loop back
+12 08
+
+; Sprite value at 0x200 + 12 ((base 10) 18)
+00
